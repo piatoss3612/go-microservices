@@ -2,6 +2,10 @@
 
 ---
 
-[Udemy](https://www.udemy.com/course/working-with-microservices-in-go/)
+### 1. Broker Service
 
-git remote add origin https://github.com/piatoss3612/go-microservises.git
+- `github.com/go-chi/chi/v5`
+- `github.com/go-chi/chi/v5/middleware`
+- `github.com/go-chi/cors`
+
+[Udemy](https://www.udemy.com/course/working-with-microservices-in-go/)
