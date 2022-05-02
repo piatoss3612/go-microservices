@@ -17,4 +17,11 @@
 - `docker-compse.yml`
 - 도커 서버 실행 & `docker-compose up -d`
 
+3. broker service 테스트
+
+- `localhost:80`을 사용할 수 없었던 문제 -> 아파치 서버를 종료함으로써 해결
+- 도커 컨테이너 재실행
+- 테스트 코드 작성
+- `go run ./cmd/web`
+
 [Udemy](https://www.udemy.com/course/working-with-microservices-in-go/)
