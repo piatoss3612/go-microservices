@@ -24,4 +24,8 @@
 - 테스트 코드 작성
 - `go run ./cmd/web`
 
+4. JSON 형식의 데이터 처리를 도와주는 helper 함수 추가
+
+- readJSON, writeJSON, errorJSON
+
 [Udemy](https://www.udemy.com/course/working-with-microservices-in-go/)
