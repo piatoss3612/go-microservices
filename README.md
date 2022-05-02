@@ -28,4 +28,11 @@
 
 - readJSON, writeJSON, errorJSON
 
+5. make, Makefile을 사용하여 컴파일 과정 단순화
+
+- Makefile: 컴파일에 필요한 명령어를 묶어 `make [커스텀 명령어]` 형식으로 실행
+- Error: `Makefile: *** missing separator. Stop.`
+  - Make 파일에서 tab을 공백\*4로 이해하는 문제 해결 방법
+    - vscode -> command palette -> Convert Indentation to Tabs
+
 [Udemy](https://www.udemy.com/course/working-with-microservices-in-go/)
