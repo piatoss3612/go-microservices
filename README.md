@@ -44,9 +44,18 @@
 - 사용자 데이터 모델 추가
 - 라우터 추가
 
-2. 데이터 베이스 연동
+2. 데이터 베이스 연동 코드 작성
 
 - `go get github.com/jackc/pgconn`
 - `go get github.com/jackc/pgx/v4`
 
-[Udemy](https://www.udemy.com/course/working-with-microservices-in-go/)
+3. Docker 이미지 빌드
+
+- `authentication-service.dockerfile`
+- `docker-compse.yml` 파일에 authentication-service, postgres 항목 추가
+
+---
+
+### <Reference>
+
+[Udemy: Working with Microservices in Go](https://www.udemy.com/course/working-with-microservices-in-go/)
