@@ -54,6 +54,8 @@
 - `authentication-service.dockerfile`
 - `docker-compse.yml` 파일에 authentication-service, postgres 항목 추가
 
+4. 라우트 & 핸들러 추가
+
 ---
 
 ### <Reference>
