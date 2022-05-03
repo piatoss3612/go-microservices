@@ -44,4 +44,9 @@
 - 사용자 데이터 모델 추가
 - 라우터 추가
 
+2. 데이터 베이스 연동
+
+- `go get github.com/jackc/pgconn`
+- `go get github.com/jackc/pgx/v4`
+
 [Udemy](https://www.udemy.com/course/working-with-microservices-in-go/)
