@@ -34,7 +34,7 @@ func (app *Config) Authenticate(w http.ResponseWriter, r *http.Request) {
 	payload := jsonResponse{
 		Error:   false,
 		Message: fmt.Sprintf("Logged in user %s\n", user.Email),
-		Daata:   user,
+		Data:    user,
 	}
 
 	app.writeJSON(w, http.StatusAccepted, payload)

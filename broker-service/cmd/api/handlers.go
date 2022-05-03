@@ -59,7 +59,7 @@ func (app *Config) authenticate(w http.ResponseWriter, a AuthPayload) {
 	client := &http.Client{}
 	response, err := client.Do(request)
 	if err != nil {
-		app.writeJSON(w, err)
+		app.errorJSON(w, err)
 		return
 	}
 	defer response.Body.Close()
