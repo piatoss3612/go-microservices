@@ -35,4 +35,13 @@
   - Make 파일에서 tab을 공백\*4로 이해하는 문제 해결 방법
     - vscode -> command palette -> Convert Indentation to Tabs
 
+### Auth Service
+
+> User -요청-> Broker -요청전달-> Auth -> DB -> Auth -응답-> Broker -응답전달-> User
+
+1. authentication service 구현
+
+- 사용자 데이터 모델 추가
+- 라우터 추가
+
 [Udemy](https://www.udemy.com/course/working-with-microservices-in-go/)
