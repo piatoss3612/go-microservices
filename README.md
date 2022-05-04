@@ -6,6 +6,8 @@
 
 ### 2. Auth Service
 
+### 3. Logger Service
+
 ---
 
 ### <Reference>
