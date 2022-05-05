@@ -152,10 +152,9 @@ func (app *Config) sendMail(w http.ResponseWriter, msg MailPayload) {
 	jsonData, _ := json.MarshalIndent(msg, "", "\t")
 
 	// call the mail service
-	mailServiceURL := "http://mail-service/send"
+	mailServiceURL := "http://mailer-service/send"
 
 	// post to mail service
-
 	request, err := http.NewRequest("POST", mailServiceURL, bytes.NewBuffer(jsonData))
 	if err != nil {
 		app.errorJSON(w, err)
@@ -165,7 +164,6 @@ func (app *Config) sendMail(w http.ResponseWriter, msg MailPayload) {
 	request.Header.Set("Content-Type", "application/json")
 
 	client := &http.Client{}
-
 	response, err := client.Do(request)
 	if err != nil {
 		app.errorJSON(w, err)
@@ -182,7 +180,8 @@ func (app *Config) sendMail(w http.ResponseWriter, msg MailPayload) {
 	// send back json
 	var payload jsonResponse
 	payload.Error = false
-	payload.Message = "message sent to " + msg.To
+	payload.Message = "Message sent to " + msg.To
 
 	app.writeJSON(w, http.StatusAccepted, payload)
+
 }
