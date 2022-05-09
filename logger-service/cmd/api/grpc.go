@@ -16,7 +16,7 @@ type LogServer struct {
 	Models data.Models
 }
 
-func (l *LogServer) writeLog(ctx context.Context, req *logs.LogRequest) (*logs.LogResponse, error) {
+func (l *LogServer) WriteLog(ctx context.Context, req *logs.LogRequest) (*logs.LogResponse, error) {
 	input := req.GetLogEntry()
 
 	// write the log

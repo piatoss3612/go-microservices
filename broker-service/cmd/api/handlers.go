@@ -2,11 +2,11 @@ package main
 
 import (
 	"broker/event"
+	"broker/logs"
 	"bytes"
 	"context"
 	"encoding/json"
 	"errors"
-	"log-service/logs"
 	"net/http"
 	"net/rpc"
 	"time"
