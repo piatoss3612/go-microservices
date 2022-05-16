@@ -14,10 +14,12 @@ services:
       - caddy_config:/config
 
   front-end:
-    image: piatoss3612/front-end:1.0.0
+    image: piatoss3612/front-end:1.0.1
     deploy:
       mode: replicated
       replicas: 1
+    environment:
+      BROKER_URL: "http://backend"
 
   broker-service:
     image: piatoss3612/broker-service:1.0.1
@@ -89,7 +91,6 @@ services:
     image: "postgres:14.2"
     ports:
       - "5432:5432"
-    restart: always
     deploy:
       mode: replicated
       replicas: 1
@@ -102,5 +103,5 @@ services:
 
 volumes:
   caddy_data:
-    - external: true
+    external: true
   caddy_config:
