@@ -2,3 +2,6 @@ db-data
 .vscode
 caddy_config
 caddy_data
+k8s
+ingress.yml
+postgres.yml
