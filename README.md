@@ -20,9 +20,16 @@
 
 ---
 
-## Deploying Application using Docker Swarm
+## Deploying Application to Cloud Platform 
 
-- https://swarm.piatoss.tech
+- Linode, Hostinger Docker Swarm
+- Hosting URL: https://swarm.piatoss.tech
+
+---
+
+## Deploying Application to Kubernetes
+
+- Minikube, Docker Compose
 
 ---
 
