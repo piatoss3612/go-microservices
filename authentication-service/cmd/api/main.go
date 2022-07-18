@@ -19,7 +19,8 @@ const webPort = "80"
 var counts int64
 
 type Config struct {
-	Repo data.Repository
+	Repo   data.Repository
+	Client *http.Client
 }
 
 func main() {
@@ -32,7 +33,9 @@ func main() {
 	}
 
 	// Config 설정
-	app := Config{}
+	app := Config{
+		Client: &http.Client{},
+	}
 	app.setupRepo(conn)
 
 	// 서버 설정

@@ -33,6 +33,20 @@
 
 ---
 
+## Testing
+
+### Authentication Service
+
+```cmd
+$ go test -v .
+=== RUN   Test_Authenticate
+--- PASS: Test_Authenticate (0.00s)
+=== RUN   Test_routes_exist
+--- PASS: Test_routes_exist (0.00s)
+PASS
+ok      authentication/cmd/api  0.310s
+```
+
 ### Reference
 
 [Udemy: Working with Microservices in Go](https://www.udemy.com/course/working-with-microservices-in-go/)
