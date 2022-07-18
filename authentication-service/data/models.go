@@ -18,8 +18,9 @@ type PostgresRepository struct {
 	Conn *sql.DB
 }
 
-func NewPostgresRepository(db *sql.DB) *PostgresRepository {
-	return &PostgresRepository{db}
+func NewPostgresRepository(pool *sql.DB) *PostgresRepository {
+	db = pool
+	return &PostgresRepository{pool}
 }
 
 // data 패키지의 인스턴스를 생성하는 함수

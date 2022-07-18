@@ -33,6 +33,7 @@ func main() {
 
 	// Config 설정
 	app := Config{}
+	app.setupRepo(conn)
 
 	// 서버 설정
 	srv := &http.Server{
